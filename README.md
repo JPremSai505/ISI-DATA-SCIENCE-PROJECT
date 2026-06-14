@@ -8,10 +8,25 @@ This repo has my project notebook for the **IDEAS (Institute of Data Engineering
 This project has two parts:
 
 **Part 1 - Temperature Data Analysis (Q1-Q10)**
-Analyzed global monthly temperature anomaly data from two sources, GCAG and GISTEMP.I Did data cleaning, converted dates, added Year/Month columns, calculated a 12-month moving average, filtered last 20 years of data, and used groupby + pivot tables to find trends.
+Analyzed global monthly temperature anomaly data from two sources, GCAG and GISTEMP. I did data cleaning, converted dates, added Year/Month columns, calculated a 12-month moving average, filtered last 20 years of data, and used groupby + pivot tables to find trends.
 
 **Part 2 - MNIST Digits Clustering (Q11-Q13)**
 Used K-Means clustering on the sklearn digits dataset (1797 handwritten digit images) to group similar digits without using labels, then mapped the clusters to actual digit labels and checked accuracy using the macro F1 score.
+
+---
+
+>  **How to Run — Read Before Running**
+>
+> This notebook was developed and run in **Google Colab**. The first cell uses:
+>
+> ```python
+> from google.colab import files
+> uploaded = files.upload()
+> ```
+>
+> This is used to upload `monthly_csv.csv` when running in Colab. If running locally (eg. Jupyter Notebook), **skip this cell** — just make sure `monthly_csv.csv` (included in this repo) is in the same folder as the notebook, and `pd.read_csv('monthly_csv.csv')` will work directly.
+
+---
 
 ## Files
 
